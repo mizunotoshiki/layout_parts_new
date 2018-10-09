@@ -1,5 +1,42 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.balloon{
+  border:solid #222 5px;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  width: 500px;
+    }
+.balloon::before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -50px;
+  border-top: 25px solid #222;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.balloon::after{
+  content: "";
+  position: absolute;
+  left: 35px;
+  bottom: -30px;
+  border-top: 15px solid white;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  width: 0;
+}
+.balloon_text{
+  font-size: 16px;
+  line-height: 16px;
+}
+
 
 /* 回答はここに書いてね */

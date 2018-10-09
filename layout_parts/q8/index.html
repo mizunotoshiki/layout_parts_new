@@ -32,30 +32,34 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="box-btn">
+              <div class="first-btn one-btn">common</div>
+              <div class="second-btn one-btn">error</div>
+              <div class="third-btn one-btn">disabled</div>
+              <div class="fourth-btn one-btn">shadow</div>
+            </div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="box-btn">
+              <div class="first-btn two-btn">common</div>
+              <div class="second-btn two-btn">error</div>
+              <div class="third-btn two-btn">disabled</div>
+              <div class="fourth-btn two-btn">shadow</div>
           </div>
-
+        </div>
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="box-btn">
+              <div class="first-btn three-btn">common</div>
+              <div class="second-btn three-btn">error</div>
+              <div class="third-btn three-btn">disabled</div>
+              <div class="fourth-btn three-btn">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
-
+      <div>
         <div class="box__inner">
           <h3 class="box__headline">
             <p class="box__headline__text">ー Q8-2 フォーム ー</p>
@@ -99,7 +103,58 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+            <form method="post">
+              <div class="font_first-name">
+                  <p class="font-name">Form Exercise
+                  </p>
+                </div>
+                <div class="clearfix">
+                  <div class="form-left">
+                    <ul class="form-left-inbox">
+                      <li class="clearfix">
+                        <p class="input-title">名前<span>*</span></p>
+                        <div class="input-box"><input type="text" class="inbox" value=""></div>
+                      </li>
+                      <li class="clearfix">
+                        <p class="input-title">性別</p>
+                        <div class="input-box">
+                          <input type="radio" name="性別" class="inbtn">男性
+                          <input type="radio" name="性別" class="inbtn">女性
+                        </div>
+                      </li>
+                      <li class="clearfix">
+                        <p class="input-title">出身</p>
+                        <div class="input-box">
+                          <select class="place" name="place">
+                            <option value="東京">東京</option>
+                            <option value="埼玉">埼玉</option>
+                            <option value="千葉">千葉</option>
+                            <option value="神奈川">神奈川</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="clearfix">
+                        <p class="input-title">Eメール<span>*</span></p>
+                        <div class="input-box"><input type="text" class="inbox" placeholder="ex) hoge@gmail.com"></div>
+                      </li>
+                      <li class="clearfix">
+                        <p class="input-title">電話番号</p>
+                        <div class="input-box"><input type="text" class="inbox" placeholder="ex)08012345678"></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="check-box">
+                          <input type="checkbox"  class="check-inbox">20歳以上です
+                        </div>
+                      </li>
+                    </ul>
+                  <div class="font-btn">送信</div>
+                </div>
+                  <div class="text-box">
+                  <textarea class="comment" placeholder="何かあれば入力してください。"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
