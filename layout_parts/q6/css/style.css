@@ -47,12 +47,12 @@
   padding: 10px;
 }
 
-.margin-box{
+.position-box{
   height: 100%;
   position: relative;
 }
 
-.margin-box_text{
+.position-box_text{
   background-color: #e6f2ff;
   height: 30px;
   width: 110px;

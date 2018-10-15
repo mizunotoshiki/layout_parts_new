@@ -179,8 +179,24 @@ form{
   box-sizing: border-box;
   border-style: none;
   cursor: pointer;
+  outline: 0;
 }
-
+.place-btn{
+  position: relative;
+}
+.place-btn:after{
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
 option{
   font-weight: normal;
   display: block;

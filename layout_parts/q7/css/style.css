@@ -19,7 +19,7 @@
   margin: 0 50px 0 0;
 }
 /* Q7-2 */
-.q7__inner{
+.tablefloat-box{
   display: table;
 }
 .table-inbox:first-child{
@@ -33,8 +33,8 @@
 }
 /* tableの中にwidthを100%でcellを均等にしてpaddingで余白を作った */
 /* Q7-3 */
-.q7__inner{
-  font-size: 0;
+.block-box{
+  font-size:0;
 }
 .inline-box{
   display: inline-block;
@@ -56,10 +56,15 @@
 }
 .flex-inbox{
   font-size: 16px;
+  vertical-align: middle;
   width: 225px;
+  box-sizing: border-box;
 }
 
 /* Q7-5 */
+.block-inbox{
+  font-size: 0;
+}
 
 .inlineblock-left{
   display: inline-block;
@@ -74,7 +79,9 @@
   padding: 0 0 0 350px;
   width: 100%;
 }
-
+.q7__box__text{
+  font-size: 16px;
+}
 
 
 

@@ -20,11 +20,11 @@
   border: #3274ae 20px solid;
   float: left;
   padding: 10px;
-  margin: 0 0 0 20px;
+  margin-left: 20px;
   width: 210px;
 }
 .inbox:first-child{
-  margin: 0;
+  margin-left: 0;
 }
 
 .inbox_text{

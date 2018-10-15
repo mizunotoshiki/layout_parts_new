@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-td{
+.meal td{
   border: solid #dedede 1px;
   font-size: 16px;
   text-align: center;
@@ -14,11 +14,11 @@ td{
   padding:10px 0;
 }
 
-tr:nth-child(odd){
+.meal tr:nth-child(odd){
   background-color: #ecf1f2;
 }
 
-th,td:first-child{
+.meal th{
   background-color: #2244aa;
   border: solid white 1px;
   color: white;
@@ -27,7 +27,7 @@ th,td:first-child{
   padding: 10px 0;
 }
 
-tr:last-child{
+.meal tr:last-child{
   border-top:dashed #000 2px;
 }
 /* 回答はここに書いてね */
