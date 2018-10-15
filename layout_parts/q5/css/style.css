@@ -9,16 +9,6 @@
   width: 500px;
 }
 
-.inbox::after{
- content: "";
- background-color: #ffefd3;
- width: 20px;
- height: 20px;
- position: absolute;
- top: 120px;
- left: 200px;
- z-index: 9;
-}
 
 .square{
   font-weight: bold;
@@ -35,6 +25,17 @@
   left :120px;
   z-index: 8;
 }
+.eight::after{
+ content: "";
+ background-color: #ffefd3;
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ top: 0;
+ right: 0;
+ z-index: 9;
+}
+
 .five{
   background-color: #9fd6d2;
   bottom: 40px;
@@ -79,14 +80,9 @@
 }
 .nine{
   background-color: #2b69a3;
-  font-size: 30px;
-  font-weight: bold;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  line-height:100px;
   position:fixed;
   top: 10px;
   left: 10px;
+  z-index: 10;
 }
 /* 回答はここに書いてね */

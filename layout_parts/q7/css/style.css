@@ -7,23 +7,23 @@
   clear: both;
   display: block;
 }
+.main-box{
+  padding: 20px 0 20px 20px;
+}
 .middle-box{
   font-size: 16px;
   float: left;
   width: 225px;
 }
 .middle-box:first-child{
-  margin-right: 50px;
+  margin: 0 50px 0 0;
 }
-
 /* Q7-2 */
-.table-box{
+.q7__inner{
   display: table;
-  table-layout: fixed;
-  width: 100%;
 }
 .table-inbox:first-child{
-  padding-right: 50px;
+  padding: 0 50px 0 0;
 }
 .table-inbox{
   display: table-cell;
@@ -33,44 +33,45 @@
 }
 /* tableの中にwidthを100%でcellを均等にしてpaddingで余白を作った */
 /* Q7-3 */
+.q7__inner{
+  font-size: 0;
+}
 .inline-box{
   display: inline-block;
-  font-size: 16px;
   width: 225px;
   vertical-align: middle;
 }
 .inline-box:first-child{
-  margin-right: 45px;
-  /* すでにpaddingで子要素が5px指定してある */
+  margin: 0 50px 0 0;
+  }
+.q7__box{
+  font-size: 16px;
 }
 
 /* Q7-4 */
 .flex-box{
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-around;
 }
 .flex-inbox{
   font-size: 16px;
-  margin: 0 auto;
   width: 225px;
 }
 
 /* Q7-5 */
-.inlineblock-box{
-  display: inline-block;
-  padding-right: 350px;
-}
 
-.inlineblock-one{
-  float: left;
+.inlineblock-left{
+  display: inline-block;
+  vertical-align: top;
   width: 300px;
 }
 
-.inlineblock-two{
-  float: left;
-  margin-left: 50px;
-  margin-right:-350px;
+.inlineblock-right{
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 0 0 -300px;
+  padding: 0 0 0 350px;
   width: 100%;
 }
 

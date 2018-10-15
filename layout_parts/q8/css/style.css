@@ -2,27 +2,12 @@
 
 /* 回答はここに書いてね */
 .box-btn{
+  color: white;
   display: inline-block;
   margin: 0 auto;
+  cursor: pointer;
 }
-.first-btn{
-  background-color:#00bcd4;
-  color: white;
-}
-.second-btn{
-  background-color: #ff4081;
-  color: white;
-}
-.third-btn{
-  background-color: #e5e5e5;
-  color: white;
-}
-.fourth-btn{
-  color:#222;
-  box-shadow: 0 1px 6px rgba(0,0,0,.12);
-  box-shadow: 0 1px 4px rgba(0,0,0,.12);
-}
-.one-btn{
+.small-btn{
   border-radius: 3px;
   font-size: 16px;
   float: left;
@@ -30,7 +15,7 @@
   margin-right: 10px;
   line-height: 26px;
 }
-.two-btn{
+.middle-btn{
   border-radius: 5px;
   font-size: 20px;
   float: left;
@@ -38,13 +23,28 @@
   margin-right: 10px;
   line-height: 32px;
 }
-.three-btn{
+.large-btn{
   border-radius: 7px;
   font-size: 24px;
   float: left;
   padding:0 25px;
   margin-right: 10px;
   line-height: 38px;
+}
+
+.common-btn{
+  background-color:#00bcd4;
+}
+.error-btn{
+  background-color: #ff4081;
+}
+.disabled-btn{
+  background-color: #e5e5e5;
+}
+.shadow-btn{
+  color:#222;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .12), 0 1px 4px rgba(0, 0, 0, .12);
+  margin-right:0;
 }
 /* Q8-2 */
 
@@ -56,26 +56,25 @@
 
 
 form{
+  padding: 20px;
   width: 700px;
   margin: 0 auto;
-  padding: 20px;
   background-color: #ECF1F2;
 }
-span{
-  color: red;
-}
+
 .font_first-name{
   position: relative;
   margin-bottom: 20px;
 }
 .font_first-name::before{
+  content: "";
   position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+
 }
 .font-name{
   position: relative;
@@ -93,50 +92,150 @@ span{
 .form-left-inbox{
   margin-bottom: 20px;
 }
-.form-left-inbox:first-child{
+
+.form-left-inbox>li{
+  margin-top: 20px;
+}
+
+.form-left-inbox>li:first-child{
   margin-top:0;
 }
 .input-title{
   float: left;
   width: 100px;
-  text-align: center;
+  text-align: right;
   line-height: 25px;
+}
+.asterisk{
+  color: red;
 }
 .input-box{
   float: right;
   width: 180px;
-  margin-bottom: 20px;
 }
 
 .inbox{
+  box-sizing: border-box;
   width: 100%;
   padding: 5px;
   border-radius: 3px;
   background-color: #FFF;
   font-size: 12px;
   line-height: 12px;
-  box-sizing: border-box;
+  border-style: none;
+  outline: 0;
 }
-.inbtn{
-  cursor: pointer;
+
+.inbox:focus{
+  box-shadow:0 0 7px #00BCD4;
 }
-.place{
-  width: 100%;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: #FFF;
-  font-size: 12px;
-  line-height: 12px;
-  box-sizing: border-box;
+
+.radio-box{
   cursor: pointer;
 }
 
+.inbtn{
+  display: none;
+}
+
+.radio_text{
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.radio_text:before{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: '';
+}
+.inbtn:checked + .radio_text:after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: '';
+}
+
+.place{
+  -webkit-appearance:none;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  border-style: none;
+  cursor: pointer;
+}
+
+option{
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
 .check-box{
-  float: right;
-  width: 180px;
   text-align: right;
 }
-.font-btn{
+
+.check-inbox{
+  padding-left: 24px;
+}
+
+.check-inbox{
+  display: none;
+}
+
+.adult_box{
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+
+.adult_box::before{
+  width: 16px;
+  height: 16px;
+  margin-top: -9px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+}
+.check-inbox:checked+.adult_box::after{
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
+}
+.transmission-btn{
+  text-align: right;
+}
+
+.transmission-btn_inbox{
   float:right;
   padding: 0 10px;
   border-radius: 5px;
@@ -145,25 +244,38 @@ span{
   cursor: pointer;
   font-size: 16px;
   line-height: 26px;
+  border-style: none;
+  outline: 0;
 }
-.check-inbox{
-  padding-left: 24px;
+
+.transmission-btn_inbox:active{
+  background-color: #FFF;
+  color: #00BCD4;
 }
+
 .text-box{
   float: right;
   width: 380px;
 }
+
 .comment{
-    float: left;
-    height: 203px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: #FFF;
-    font-size: 12px;
-    box-sizing: border-box;
-    resize:none;
+  height: 203px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  box-sizing: border-box;
+  resize:none;
+  border-style: none;
+  outline: 0;
 }
+.comment:focus{
+  box-shadow:0 0 7px #00BCD4;
+}
+
+
+
 
 
 /* 回答はここに書いてね */

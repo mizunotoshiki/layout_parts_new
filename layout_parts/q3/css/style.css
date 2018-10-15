@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-table{
+.meal{
   table-layout: fixed;
   width: 100%;
 }
@@ -11,8 +11,7 @@ td{
   font-size: 16px;
   text-align: center;
   line-height: 22px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding:10px 0;
 }
 
 tr:nth-child(odd){
@@ -25,8 +24,7 @@ th,td:first-child{
   color: white;
   font-size: 18px;
   line-height: 26px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 tr:last-child{
