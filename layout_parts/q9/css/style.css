@@ -35,11 +35,9 @@
   word-break: break-all;
   }
 .car:hover>.car_img{
-  transition:all 0.5s;
   transform: scale(1.5);
 }
 .car:hover>.car-box{
-  transition: all 0.5s;
   position: absolute;
   bottom: 0;
   left: 0;
